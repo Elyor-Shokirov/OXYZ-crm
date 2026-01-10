@@ -4,7 +4,7 @@ import { Card, CardContent } from '../ui/card'
 function AboutComponent() {
 	return (
 		<>
-			<div className=' bg-[#F7F7F6] min-h-213.5 mt-15 md:mt-30'>
+			<div className=' bg-[#F7F7F6] min-h-213.5 mt-15'>
 				<div className='container mx-auto px-2.5 md:px-0 max-w-7xl h-full pt-15 md:pt-30 pb-15 md:pb-30'>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-2 '>
 						<div className=''>

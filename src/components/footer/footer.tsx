@@ -105,7 +105,7 @@ function Footer() {
 										key={index}
 										className='text-white font-manrope font-medium text-base md:text-lg hover:text-[#F07C00] transition-colors cursor-pointer'
 									>
-										{item}
+										{item.name}
 									</li>
 								))}
 							</ul>

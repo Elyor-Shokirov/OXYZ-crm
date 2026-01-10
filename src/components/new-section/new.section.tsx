@@ -1,12 +1,27 @@
 import { newsArrays } from '@/constants/constants'
+import { cn } from '@/lib/utils'
+import { useNavigate } from 'react-router'
 import SectionTitle from '../section-title/section.title'
 import { Button } from '../ui/button'
 import { Card, CardContent } from '../ui/card'
 
 function NewSection() {
+	const navigate = useNavigate()
+
+	const onDetailCourse = (slug: string) => {
+		navigate(`/news/${slug}`)
+	}
+
+	const currentPath = location.pathname.split('/')[1]
+
 	return (
 		<>
-			<div className='bg-[#F7F7F6] min-h-247.25'>
+			<div
+				className={cn(
+					' min-h-247.25',
+					currentPath === 'news' ? 'bg-white' : 'bg-[#F7F7F6]'
+				)}
+			>
 				<div className='container mx-auto max-w-7xl p-2.5 md:pt-30 pt-15 pb-15'>
 					<SectionTitle
 						title='Новости и обновления'
@@ -14,7 +29,13 @@ function NewSection() {
 					/>
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-2.5 mt-11.5'>
 						{newsArrays.slice(0, 3).map(item => (
-							<Card key={item.date} className='p-2.5 min-h-143'>
+							<Card
+								key={item.date}
+								className={cn(
+									'p-2.5 min-h-143',
+									currentPath === 'news' ? 'bg-[#F7F7F6]' : 'bg-white'
+								)}
+							>
 								<CardContent className='p-0 flex flex-col h-full'>
 									<img
 										src={item.image}
@@ -33,6 +54,7 @@ function NewSection() {
 										<Button
 											variant={'ghost'}
 											className='font-manrope underline cursor-pointer font-medium md:text-[20px]/[100%] text-[20px]/[100%]'
+											onClick={() => onDetailCourse(item.slug)}
 										>
 											Читать статью
 										</Button>

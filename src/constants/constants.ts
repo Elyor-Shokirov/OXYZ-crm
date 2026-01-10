@@ -39,7 +39,7 @@ export const whyusArray = [
 
 export const ourServiceArray = [
 	{
-		title: 'Организация между-ных перевозок',
+		title: 'Организация междуных перевозок',
 		description:
 			'Полная логистика грузов по направлениям Европа — СНГ — Китай. Рефрижераторы для скоропортящихся товаров, тентованные авто для оборудования и нетемпературных грузов. Контроль 24/7, прозрачные сроки, документы под ключ.',
 		image: '/img/service_1.jpg',
@@ -117,24 +117,30 @@ export const proccessResultArrayObject = [
 export const newsArrays = [
 	{
 		image: '/img/news_img.png',
+		slug: 'otkryli-novoe-napravlenie-dostavka-v-kitay',
 		title: 'Открыли новое направление — доставка в Китай',
 		descripton:
 			'Мы расширили географию перевозок: теперь доступны международные грузоперевозки по странам Европы. Работаем с полным сопровождением и оформлением документов. Уже в пути — первые грузы наших клиентов!',
 		date: '03.06.2025',
+		text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum'(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
 	},
 	{
 		image: '/img/news_img.png',
 		title: 'Запустили онлайн-отслеживание грузов',
+		slug: 'zapustili-onlayn-otslezhivanie-gruzov',
 		descripton:
 			'Теперь вы можете отслеживать статус своего груза в реальном времени. Просто введите номер накладной на сайте — и получайте актуальную информацию 24/7. Быстро, удобно и прозрачно.',
 		date: '03.06.2025',
+		text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
 	},
 	{
 		image: '/img/news_img.png',
 		title: 'Снижены тарифы на междугородние перевозки',
+		slug: 'snizheny-tarify-na-mezhdugorodnie-perevozki',
 		descripton:
 			'Хорошие новости для бизнеса! Мы пересмотрели стоимость логистики по Узбекистану и сделали её ещё выгоднее. Узнайте подробности у нашего менеджера и рассчитайте новый тариф прямо на сайте.',
 		date: '03.06.2025',
+		text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
 	},
 ]
 
@@ -172,11 +178,60 @@ export const faqArray = [
 	},
 ]
 
-export const menuArray = ['Главная', 'О нас', 'Услуги', 'Отзывы', 'Отзывы']
+export const menuArray = [
+	{
+		name: 'Главная',
+		route: '/',
+	},
+	{
+		name: 'О нас',
+		route: '/about',
+	},
+	{
+		name: 'Услуги',
+		route: '/service',
+	},
+	{
+		name: 'Новости',
+		route: '/news',
+	},
+	{
+		name: 'Контакты',
+		route: '/contact',
+	},
+]
 
 export const contacts = [
 	'+998-99-536-57-47',
 	'+998-90-823-22-32',
 	'ufdworldservice@gmail.com',
 	'г. Ташкент, Чиланзарский р.3-ЧАРХ Камолон МФЙ,улица Мукумий, 178-дом',
+]
+
+export const contactInfo = [
+	{
+		icon: '/img/phone_contact.png',
+		label: 'Номер телефона',
+		value: '+998-99-536-57-47',
+		link: 'tel:+998995365747',
+	},
+	{
+		icon: '/img/phone_contact.png',
+		label: 'Номер телефона',
+		value: '+998-90-823-22-32',
+		link: 'tel:+998908232232',
+	},
+	{
+		icon: '/img/email_contact.png',
+		label: 'E-mail',
+		value: 'ufdworldservice@gmail.com',
+		link: 'mailto:ufdworldservice@gmail.com',
+	},
+	{
+		icon: '/img/location_contact.png',
+		label: 'Юр. Адрес:',
+		value:
+			'город Ташкент, Чиланзарский район, 3-ЧАРХ Камолон МФЙ, улица Мукумий, 178',
+		link: null,
+	},
 ]

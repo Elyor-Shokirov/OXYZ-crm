@@ -7,7 +7,7 @@ import { Card, CardContent } from '../ui/card'
 function OurService() {
 	return (
 		<>
-			<div className='container mx-auto max-w-7xl'>
+			<div className='container mx-auto max-w-7xl pb-30'>
 				<div className='mt-15 md:mt-30 '>
 					<SectionTitle
 						title='Наши услуги'
