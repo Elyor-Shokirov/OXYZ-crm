@@ -1,20 +1,29 @@
+import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import { Auth } from '../models/auth.model.js'
 
-const token = jwt.sign(
-	{
-		id: user.id,
-		username: user.username,
-	},
-	process.env.JWT_SECRET,
-	{ expiresIn: '1h' }
-)
+// Token generatsiya qilish funksiyasi
+const generateToken = user => {
+	return jwt.sign(
+		{
+			id: user.id,
+			username: user.username,
+		},
+		process.env.JWT_SECRET,
+		{ expiresIn: '1h' }
+	)
+}
 
 export const createUser = async (req, res) => {
 	try {
 		const { username, password } = req.body
-		if (!username || password) {
-			return res.status(400).json({ message: 'Name and Password are required' })
+
+		// ❌ XATO: !username || password
+		// ✅ TO'G'RI: !username || !password
+		if (!username || !password) {
+			return res
+				.status(400)
+				.json({ message: 'Username and Password are required' })
 		}
 
 		const existingUser = await Auth.findOne({ where: { username } })
@@ -34,7 +43,7 @@ export const createUser = async (req, res) => {
 			token,
 			user: {
 				id: user.id,
-				username: username.id,
+				username: user.username, // ❌ username.id emas!
 				createdAt: user.createdAt,
 			},
 		})
@@ -53,10 +62,14 @@ export const getAllUsers = async (req, res) => {
 }
 
 export const getUser = async (req, res) => {
-	const user = await Auth.findOne(req.params.id)
-	if (user) {
-		res.status().json(user)
-	} else {
-		res.status(404).json({ message: 'User not found' })
+	try {
+		const user = await Auth.findByPk(req.params.id) // findOne emas, findByPk
+		if (user) {
+			res.status(200).json(user) // status() ichiga 200 qo'shing
+		} else {
+			res.status(404).json({ message: 'User not found' })
+		}
+	} catch (error) {
+		res.status(500).json({ error: error.message })
 	}
 }
