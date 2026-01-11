@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 
 //Routes
-import authRouters from './routes/auth.routes'
+import authRouters from './routes/auth.routes.js'
 
 app.use('/auth', authRouters)
 

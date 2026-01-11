@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt'
-import { Auth } from '../models/auth.model'
+import { Auth } from '../models/auth.model.js'
 
 export const createUser = async (req, res) => {
 	try {
