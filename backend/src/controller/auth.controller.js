@@ -1,5 +1,5 @@
+import jwt from 'jsonwebtoken'
 import { Auth } from '../models/auth.model.js'
-const jwt = require('jsonwebtoken')
 
 const token = jwt.sign(
 	{
