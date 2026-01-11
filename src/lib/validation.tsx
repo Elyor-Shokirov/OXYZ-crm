@@ -1,13 +1,36 @@
 import z from 'zod'
 
 export const contactFormSchema = z.object({
-	city: z.string().min(2).max(50),
-	dilveredCity: z.string().min(2).max(50),
-	username: z.string().min(2).max(50),
-	phone_number: z.string().min(2).max(50),
-	model_transport: z.string().min(2).max(50),
-	cargo_weight: z.string().min(2).max(50),
-	whatkind_cargo: z.string().min(2).max(50),
+	city: z
+		.string()
+		.min(2, 'Город отправления обязателен')
+		.max(50, 'Название города слишком длинное'),
+
+	dilveredCity: z
+		.string()
+		.min(2, 'Город доставки обязателен')
+		.max(50, 'Название города слишком длинное'),
+
+	username: z.string().min(2, 'Введите имя').max(50, 'Имя слишком длинное'),
+
+	phone_number: z
+		.string()
+		.regex(/^\+998\d{9}$/, 'Номер должен быть в формате +998XXXXXXXXX'),
+
+	model_transport: z
+		.string()
+		.min(2, 'Укажите модель транспорта')
+		.max(50, 'Название слишком длинное'),
+
+	cargo_weight: z
+		.string()
+		.min(1, 'Укажите вес груза')
+		.max(50, 'Значение слишком длинное'),
+
+	whatkind_cargo: z
+		.string()
+		.min(2, 'Укажите тип груза')
+		.max(50, 'Описание слишком длинное'),
 })
 
 export const lastContactSchema = z.object({
