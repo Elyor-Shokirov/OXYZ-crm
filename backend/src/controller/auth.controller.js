@@ -1,4 +1,3 @@
-import asyncHandler from '../middlewares/asyncHandler.js'
 import { Auth } from '../models/auth.model.js'
 const jwt = require('jsonwebtoken')
 
@@ -17,8 +16,6 @@ export const createUser = async (req, res) => {
 		if (!username || password) {
 			return res.status(400).json({ message: 'Name and Password are required' })
 		}
-
-		// res.status(201).json(user)
 
 		const existingUser = await Auth.findOne({ where: { username } })
 		if (existingUser) {
@@ -55,11 +52,11 @@ export const getAllUsers = async (req, res) => {
 	}
 }
 
-export const getUser = asyncHandler(async (req, res) => {
+export const getUser = async (req, res) => {
 	const user = await Auth.findOne(req.params.id)
 	if (user) {
 		res.status().json(user)
 	} else {
 		res.status(404).json({ message: 'User not found' })
 	}
-})
+}
