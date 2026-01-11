@@ -18,8 +18,6 @@ export const createUser = async (req, res) => {
 	try {
 		const { username, password } = req.body
 
-		// ❌ XATO: !username || password
-		// ✅ TO'G'RI: !username || !password
 		if (!username || !password) {
 			return res
 				.status(400)
@@ -65,7 +63,7 @@ export const getUser = async (req, res) => {
 	try {
 		const user = await Auth.findByPk(req.params.id) // findOne emas, findByPk
 		if (user) {
-			res.status(200).json(user) // status() ichiga 200 qo'shing
+			res.status(200).json(user)
 		} else {
 			res.status(404).json({ message: 'User not found' })
 		}

@@ -5,6 +5,5 @@ const { createUser, getAllUsers, getUser } = await import(
 )
 router.post('/create', createUser)
 router.get('/users', getAllUsers)
-router.get('/users/:id', getUser)
-
+router.get('/users/:id', verifyToken, getUser)
 export default router
